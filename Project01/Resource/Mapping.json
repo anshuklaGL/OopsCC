@@ -1,0 +1,59 @@
+[
+	{
+		"MappingName": "CDWMappletPrepare_Map",
+		"SourceDetails": [
+			{	"SourceTx":"Source",
+				"SourceName": "SRCControlRecord",
+				"SourceObject": "Control_MATMAS.txt"
+			},
+			{
+				"SourceTx":"Source1",
+				"SourceName": "SRCMAKRecord",
+				"SourceObject": "MAKTM01_MATMAS.txt"
+			},
+			{
+				"SourceTx":"Source2",
+				"SourceName": "SRCMARRecord",
+				"SourceObject": "MARAM08_MATMAS.txt"
+			}
+		],
+		"MappletDetails": [
+			{
+				"MappletName": "TestMapplet1",
+				"FieldInputGroupNames": [
+					"Control_Input_Group_For_IDoc_MATMAS01",
+					"E2MAKTM001",
+					"E2MARAM008"
+				],
+				"FieldInputGroupDetails": [
+					{
+						"Name": "Control_Input_Group_For_IDoc_MATMAS01",
+						"Fields": {
+							"CTRLPK": "GPK_DOCNUM"
+						}
+					},
+					{
+						"Name": "E2MAKTM001",
+						"Fields": {
+							"MAKFK": "GFK_E2MARAM008_E2MAKTM001",
+							"MAKPK": "GPK_E2MAKTM001",
+							"MAKMSGNO": "E2MAKTM001_MSGFN"
+						}
+					},
+					{
+						"Name": "E2MARAM008",
+						"Fields": {
+							"MARFK": "GFK_DOCNUM_E2MARAM008",
+							"MARPK": "GPK_E2MARAM008",
+							"MARMSGNO": "E2MARAM008_MSGFN",
+							"MARMATNR": "E2MARAM008_MATNR"
+						}
+					}
+				],
+				"FieldOutputGroupName": [
+					"IDoc_Prepare_Output_Group_For_MATMAS01"
+				]
+			}
+		]
+	}
+]

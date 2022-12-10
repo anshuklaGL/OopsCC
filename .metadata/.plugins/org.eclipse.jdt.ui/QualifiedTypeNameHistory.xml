@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.gl.cc1.Customer01"/>
+    <fullyQualifiedTypeName name="com.greatlearning.corejava.Health"/>
+    <fullyQualifiedTypeName name="com.greatlearning.corejava.Customer"/>
+    <fullyQualifiedTypeName name="com.gl.cc1.ConstructorDemo"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+</qualifiedTypeNameHistroy>

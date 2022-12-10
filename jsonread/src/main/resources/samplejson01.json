@@ -1,0 +1,36 @@
+{
+	"MappletDetails": [
+		{
+			"FieldInputGroup": [
+				{
+					"Name": "Control_Input_Group_For_IDoc_MATMAS01",
+					"Fields": {
+						"CTRLPK": "GPK_DOCNUM"
+					}
+				},
+				{
+					"Name": "E2MAKTM001",
+					"Fields": {
+						"MAKFK": "GFK_E2MARAM008_E2MAKTM001",
+						"MAKPK": "GPK_E2MAKTM001",
+						"MAKMSGNO": "E2MAKTM001_MSGFN"
+					}
+				},
+				{
+					"Name": "E2MARAM008",
+					"Fields": {
+						"MARFK": "GFK_DOCNUM_E2MARAM008",
+						"MARPK": "GPK_E2MARAM008",
+						"MARMSGNO": "E2MARAM008_MSGFN",
+						"MARMATNR": "E2MARAM008_MATNR"
+					}
+				}
+			],
+			"FieldOutputGroup": [
+				{
+					"Name": "IDoc_Prepare_Output_Group_For_MATMAS01"
+				}
+			]
+		}
+	]
+}
